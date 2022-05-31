@@ -405,13 +405,11 @@ const buyChocoFrogs = function (gold) {
   const chocoFrogCost = 3;
 
   // adding 2 can still throw a bug. Decided to trunc to make sure it gives whole values.
-  return Math.trunc(gold  / chocoFrogCost);
+  return Math.trunc(gold / chocoFrogCost);
 };
 
 const totalFrogs2 = buyChocoFrogs(11);
 console.log(totalFrogs2);
-
-
 
 ////////////////// PROBLEM 21 ////////////////////
 let sampleArray = [0, 1, 2, 3, 4, 7, 5, 6, 8, 9];
@@ -420,6 +418,19 @@ let sampleArray = [0, 1, 2, 3, 4, 7, 5, 6, 8, 9];
 */
 
 //CODE HERE
+
+// only returns true; need to come back and do this one
+const sortArray = function (arr) {
+  let sortArr = arr.sort((a, b) => a - b);
+  if (sortArr) {
+    return true;
+  } else {
+    return false;
+  }
+};
+console.log(sortArray([1, 3, 2, 4]));
+const arrayIsAscending = sortArray(sampleArray);
+console.log(arrayIsAscending);
 
 ////////////////// PROBLEM 22 ////////////////////
 
@@ -443,13 +454,13 @@ function pond() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = [];
+let globalScope = ["duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = [];
+let bathroomScope = ["rubberDuck", "Duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = [];
+let bathtubScope = ["sailorDuck", "rubberDuck", "duck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = [];
+let pondScope = ["duck", "realDuck"];
