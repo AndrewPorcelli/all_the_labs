@@ -180,15 +180,18 @@ console.log("declaration");
 const nameCheck = function (name) {
   if (name === "Steven") {
     return "What is up Steven?";
+  } else if (name === "Bryan") {
+    return "Hey Bryan!";
   } else {
-    return `Cool name, ${name}`;
+    return `Cool name, ${name}!`;
   }
 };
 
 const nameGreeting = nameCheck("Steven");
 const nameGreeting2 = nameCheck("Max");
+const nameGreeting3 = nameCheck("Bryan");
 
-console.log(nameGreeting, nameGreeting2);
+console.log(nameGreeting, nameGreeting2, nameGreeting3);
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
@@ -345,6 +348,7 @@ const uppercaseFunction = function (str) {
   console.log(str.toUpperCase());
 };
 uppercaseFunction(sampleString);
+uppercaseFunction("General Kenobi!");
 
 ////////////////// PROBLEM 18 ////////////////////
 /*
