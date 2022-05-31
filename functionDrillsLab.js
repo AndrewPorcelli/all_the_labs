@@ -341,6 +341,11 @@ let sampleString = "Hi, my name is Kylo.";
 
 //CODE HERE
 
+const uppercaseFunction = function (str) {
+  console.log(str.toUpperCase());
+};
+uppercaseFunction(sampleString);
+
 ////////////////// PROBLEM 18 ////////////////////
 /*
   Write a function called emailCheck that takes in
