@@ -318,6 +318,20 @@ let loser = "Glimmer";
 
 //CODE HERE
 
+console.log(contestants);
+
+const theElminator = function (cont1, loser) {
+  for (let i = 0; i < cont1.length; i++) {
+    if (cont1[i] === loser) {
+      cont1.splice(i, 1);
+    }
+  }
+  return cont1;
+};
+
+console.log(theElminator(contestants, loser));
+console.log(contestants);
+
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo.";
 /*
