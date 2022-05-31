@@ -104,13 +104,11 @@ const add = function (num1, num2) {
   +num1;
   +num2;
 
-  return num1 + num2
-
-}
+  return num1 + num2;
+};
 
 const sum = add(3, 5);
 console.log(sum);
-
 
 ////////////////// PROBLEM 7 ////////////////////
 
@@ -125,7 +123,7 @@ const exclaim = function (str) {
 
 // console.log('arrow')
 // console.log('declaration')
-// console.log('expression')
+console.log("expression");
 
 ////////////////// PROBLEM 8 ////////////////////
 
@@ -138,7 +136,7 @@ const exclaimTwo = (str) => {
   return str.toUpperCase() + "!!!";
 };
 
-// console.log('arrow')
+console.log("arrow");
 // console.log('declaration')
 // console.log('expression')
 
@@ -146,8 +144,12 @@ const exclaimTwo = (str) => {
   Rewrite exclaimTwo to be a single line.
   Call your new function exclaimThree
 
+
   Brownie points if you use a template string
 */
+
+const exclaimThree = (str) => `${str.toUpperCase()}!!!`;
+console.log(exclaimThree('hello'));
 
 ////////////////// PROBLEM 9 ////////////////////
 
