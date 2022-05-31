@@ -385,14 +385,14 @@ console.log(email1.trim());
 
 //CODE HERE
 
-const buyChocoFrogs = function (gold) {
-  const chocoFrogCost = 3;
+// const buyChocoFrogs = function (gold) {
+//   const chocoFrogCost = 3;
 
-  return gold / chocoFrogCost;
-};
+//   return gold / chocoFrogCost;
+// };
 
-const totalFrogs = buyChocoFrogs(21);
-console.log(totalFrogs);
+// const totalFrogs = buyChocoFrogs(21);
+// console.log(totalFrogs);
 
 ////////////////// PROBLEM 20 ////////////////////
 /*
@@ -400,6 +400,18 @@ console.log(totalFrogs);
 */
 
 //CODE HERE
+
+const buyChocoFrogs = function (gold) {
+  const chocoFrogCost = 3;
+
+  // adding 2 can still throw a bug. Decided to trunc to make sure it gives whole values.
+  return Math.trunc(gold  / chocoFrogCost);
+};
+
+const totalFrogs2 = buyChocoFrogs(11);
+console.log(totalFrogs2);
+
+
 
 ////////////////// PROBLEM 21 ////////////////////
 let sampleArray = [0, 1, 2, 3, 4, 7, 5, 6, 8, 9];
