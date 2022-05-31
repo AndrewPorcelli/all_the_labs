@@ -101,13 +101,13 @@ console.log(compareNums(4, 7));
 //CODE HERE
 
 const add = function (num1, num2) {
-  +num1;
-  +num2;
+  num1 = +num1;
+  num2 = +num2;
 
   return num1 + num2;
 };
 
-const sum = add(3, 5);
+const sum = add("3", 10);
 console.log(sum);
 
 ////////////////// PROBLEM 7 ////////////////////
@@ -226,6 +226,13 @@ let namesArr = ["Cameron", "Riley", "Eric", "Brenna", "Karl"];
 */
 
 //CODE HERE
+
+const printAllNames = function (arr) {
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
+};
+printAllNames(namesArr);
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
