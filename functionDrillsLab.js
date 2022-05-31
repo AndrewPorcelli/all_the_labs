@@ -149,7 +149,7 @@ console.log("arrow");
 */
 
 const exclaimThree = (str) => `${str.toUpperCase()}!!!`;
-console.log(exclaimThree('hello'));
+console.log(exclaimThree("hello"));
 
 ////////////////// PROBLEM 9 ////////////////////
 
@@ -163,7 +163,7 @@ function exclaimFour(str) {
 }
 
 // console.log('arrow')
-// console.log('declaration')
+console.log("declaration");
 // console.log('expression')
 
 ////////////////// PROBLEM 10 ////////////////////
@@ -176,6 +176,19 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+
+const nameCheck = function (name) {
+  if (name === "Steven") {
+    return "What is up Steven?";
+  } else {
+    return `Cool name, ${name}`;
+  }
+};
+
+const nameGreeting = nameCheck("Steven");
+const nameGreeting2 = nameCheck("Max");
+
+console.log(nameGreeting, nameGreeting2);
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
