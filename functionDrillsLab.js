@@ -361,9 +361,11 @@ uppercaseFunction("General Kenobi!");
   return 'must provide a valid email address'
 */
 
+let email1 = "   andy.porcelli1@    ";
+
 const emailCheck = function (email) {
-  let emailString = String(email);
-  let emailTrim = email.trim();
+  email = String(email);
+  email = email.trim();
   if (email.includes("@")) {
     return "email verified";
   } else {
@@ -371,6 +373,9 @@ const emailCheck = function (email) {
   }
 };
 console.log(emailCheck("  andyporcelli@gmail.com "));
+console.log(emailCheck(" kassi porcelli"));
+console.log(emailCheck(email1));
+console.log(email1.trim());
 
 ////////////////// PROBLEM 19 ////////////////////
 /*
@@ -379,6 +384,15 @@ console.log(emailCheck("  andyporcelli@gmail.com "));
 */
 
 //CODE HERE
+
+const buyChocoFrogs = function (gold) {
+  const chocoFrogCost = 3;
+
+  return gold / chocoFrogCost;
+};
+
+const totalFrogs = buyChocoFrogs(21);
+console.log(totalFrogs);
 
 ////////////////// PROBLEM 20 ////////////////////
 /*
